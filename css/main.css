@@ -47,9 +47,15 @@ nav > ul > li {
 nav > ul > li > a {
 	color: #fff;
 	text-decoration: none;
+	transition: all 0.3s ease-in-out;
+}
+nav > ul > li > a:hover,
+nav > ul > li > a:focus {
+	color: #cfc91d;
 }
 /*OPENING HEADER*/
 header#index {
+	background-attachment: fixed;
 	background-image: url(../img/headerbg.png);
 	height: 500px;
 	background-repeat: no-repeat;
@@ -112,16 +118,16 @@ header#index a:hover {
 	font-weight: bold;
 }
 #aboutBoxes {
-	width: 80%;
-	margin: 5% 9% 2%;
-	display: inline-block;
-	color:  #7e8287;
+	color: #7e8287;
+    margin: 0 auto;
+    width: 80%;
 }
 .aboutBox {
 	float: left;
-    width: 15%;
-    padding: 0 50px;
-	border-right: 1px solid black;
+    width: 16%;
+    padding: 0 4%;
+    border-right: 1px solid black;
+    margin: 3% 0;
 }
 .aboutBox i {
 	color:  #02918c;
@@ -158,6 +164,9 @@ header#index a:hover {
     width: 40%;
     color:  #7e8287;
 }
+.serviceBox.left {
+	margin-left: 15%;
+}
 .serviceBox i {
 	color:  #02918c;
 }
@@ -192,8 +201,12 @@ header#index a:hover {
     text-align: center;
 }
 .workBox {
-	text-align: left;
 	float: left;
+	margin-top: -5px;
+}
+div.workBox:hover {
+	background-color: red;
+
 }
 
 /*CONTACT SECTION*/
@@ -224,11 +237,12 @@ header#index a:hover {
 #contactForm input {
 	background: transparent;
 	border: none;
-	border-top: 1px solid #7D8186;
+	border-bottom: 1px solid #7D8186;
 	text-align: center;
 	width: 60%;
 	height: 30px;
 	font-size: 24px;
+	color:#7D8186;
 }
 #contactForm textarea {
 	background: transparent;
@@ -237,8 +251,12 @@ header#index a:hover {
 	border-bottom: 1px solid #7D8186;
 	text-align: center;
 	width: 60%;
-	height: 30px;
 	font-size: 24px;
+	color:#7D8186;
+}
+#contactForm input:focus,
+#contactForm textarea:focus {
+	outline: none;
 }
 
 #contactForm hr.half {
@@ -273,3 +291,6 @@ footer p {
 	color:  #7e8287;
 	text-align: center;
 }
+
+
+
