@@ -47,7 +47,8 @@ nav > ul > li {
 nav > ul > li > a {
 	color: #fff;
 	text-decoration: none;
-	transition: all 0.3s ease-in-out;
+	-webkit-transition: all 0.3s ease-in-out;
+	        transition: all 0.3s ease-in-out;
 }
 nav > ul > li > a:hover,
 nav > ul > li > a:focus {
@@ -87,7 +88,8 @@ header#index a {
 	text-decoration: none;
 	font-weight: bold;
 	font-size: 14px;
-	transition: all 0.3s ease-in-out;
+	-webkit-transition: all 0.3s ease-in-out;
+	        transition: all 0.3s ease-in-out;
 }
 header#index a:hover {
 	background-color: #0B1016; 
@@ -204,10 +206,7 @@ header#index a:hover {
 	float: left;
 	margin-top: -5px;
 }
-div.workBox:hover {
-	background-color: red;
 
-}
 
 /*CONTACT SECTION*/
 #contact {
@@ -265,18 +264,20 @@ div.workBox:hover {
 #contactForm hr.three_quarters {
 	margin: 4% 10%;
 }
-#contactForm a {
+#contactForm button {
 	clear: both;
 	content: '';
+	border:none;
 	padding: 10px 35px;
 	color: #0B1016; 
 	background-color: #CDC71D;
 	text-decoration: none;
 	font-weight: bold;
 	font-size: 14px;
-	transition: all 0.3s ease-in-out;
+	-webkit-transition: all 0.3s ease-in-out;
+	        transition: all 0.3s ease-in-out;
 }
-#contactForm a:hover {
+#contactForm button:hover {
 	background-color: #0B1016; 
 	color: #CDC71D;
 }
